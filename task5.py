@@ -1,3 +1,4 @@
+
 my_list = [7, 7, 5, 4, 4, 2]
 new_value = (input('введите число: '))
 i = 0
@@ -9,3 +10,4 @@ for i in range(len(my_list)):
     else:
         print('значение меньше минимально установленного')
         break
+

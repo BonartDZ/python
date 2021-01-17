@@ -1,3 +1,4 @@
+
 my_list_str = (input('введите слова через пробел '))
 my_list = my_list_str.split( )
 print(my_list)    # подсказка чтоб не забыть что вводил =)
@@ -10,3 +11,4 @@ while i < len(my_list):
         print((str(n) + '. ' + str(my_list[i][0:10])))
         i += 1
         n += 1
+

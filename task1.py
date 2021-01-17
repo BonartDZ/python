@@ -1,3 +1,4 @@
+
 a = int(input('введите число: '))
 b = input('введите число: ')
 c = int(input('введите число: '))
@@ -11,6 +12,3 @@ i = 0
 while i < k:
     i += 1
     print(type(my_list[i]))
-
-
-

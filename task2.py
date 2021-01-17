@@ -1,3 +1,4 @@
+
 my_list_str = (input('введите переменные через пробел'))
 my_list = my_list_str.split( )
 print(my_list)
