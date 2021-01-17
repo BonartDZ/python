@@ -1,9 +1,13 @@
-var_proc = float(input('введите объем выручки'))
-var_costs = float(input('введите объем издержек'))
-if var_costs > var_proc:
-    print('вы работаете в убыток')
-else:
-    print('рентабельность: ' + str(var_proc / var_costs))
-    var_workers = int(input('работающих на предприятии'))
-    print('прибыль на человека ' + str((var_proc - var_costs) / var_workers) + ' рубля (ей)')
+
+my_list = [7, 7, 5, 4, 4, 2]
+new_value = (input('введите число: '))
+i = 0
+for i in range(len(my_list)):
+    if int(new_value) >= int(my_list[i]):
+        my_list.insert((i), new_value)
+        print(my_list)
+        break
+    else:
+        print('значение меньше минимально установленного')
+        break
 

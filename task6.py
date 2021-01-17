@@ -1,10 +1,20 @@
-start_km = int(input('стартовый результат, км'))
-finish_km = int(input('требуемый результат, км'))
-result_days = 1
 
-while start_km < finish_km:
-    # я знаю что тут не правильно, не могу понять какую формулу применить.
-    start_km += start_km + (start_km * 0.1)
-    result_days += int(result_days + start_km)
-    print(result_days)
+my_dict = {}
+my_list = []
+
+goods = int(input('введите количества товара '))
+n = 1
+while n <= goods:
+        my_dict = {'Наименование': input('Введите наименование товара: '), 'Цена': input('Введите цену товара: '), 'Количество': input('введите количество ')}
+        my_list.append((n, my_dict))
+        n += 1
+print(my_list)
+my_analitics = {}
+for el in my_list:
+    for key, values in el[1].items():
+        if key in my_analitics:
+            my_analitics[key].append(values)
+        else:
+            my_analitics[key] = [values]
+print(my_analitics)
 
