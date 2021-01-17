@@ -1,6 +1,11 @@
-var_time = int(input('введите количество секунд'))
-var_hour = var_time//3600
-var_min = (var_time - var_hour*3600)//60
-var_sec = var_time - (var_hour*3600 + var_min * 60)
-print(f"время в формате чч {var_hour} мм {var_min} сс {var_sec} ")
+my_list_str = (input('введите переменные через пробел'))
+my_list = my_list_str.split( )
+print(my_list)
+print(type(my_list))
+k = len(my_list) - 1
+i = 0
+while i < k:
+    my_list[i], my_list[i + 1] = my_list[i + 1], my_list[i]
+    i += 2
 
+print(my_list)
