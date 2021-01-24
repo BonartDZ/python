@@ -1,20 +1,20 @@
+from itertools import count, cycle
 
-my_dict = {}
-my_list = []
+for el in count(3):
+    if el > 10:
+        break
+    else:
+        print(el)
 
-goods = int(input('введите количества товара '))
-n = 1
-while n <= goods:
-        my_dict = {'Наименование': input('Введите наименование товара: '), 'Цена': input('Введите цену товара: '), 'Количество': input('введите количество ')}
-        my_list.append((n, my_dict))
-        n += 1
-print(my_list)
-my_analitics = {}
-for el in my_list:
-    for key, values in el[1].items():
-        if key in my_analitics:
-            my_analitics[key].append(values)
-        else:
-            my_analitics[key] = [values]
-print(my_analitics)
+
+
+
+food_list = ["морковь", "картофель", "курица", "лук", "колбаса"]
+print(food_list)
+iter = cycle(food_list)
+for i in range(0, 10):
+   print(next(cycle(iter)))
+
+
+
 
