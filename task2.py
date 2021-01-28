@@ -1,12 +1,14 @@
+import encodings
+with open(r'C:\projets\lesson5\task2.txt', 'r', encoding='utf-8') as file:
+    lines = file.readlines()
+    print("количество строк", len(lines))
+    for i in range(len(lines)):
+        lines[i] = list(lines[i].split())
+        print('количество слов в строке',i + 1, ': ', len(lines[i]))
 
-my_list_str = (input('введите переменные через пробел'))
-my_list = my_list_str.split( )
-print(my_list)
-print(type(my_list))
-k = len(my_list) - 1
-i = 0
-while i < k:
-    my_list[i], my_list[i + 1] = my_list[i + 1], my_list[i]
-    i += 2
 
-print(my_list)
+
+
+
+
+
