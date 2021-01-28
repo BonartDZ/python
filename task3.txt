@@ -1,0 +1,10 @@
+Ivanov 20000
+Petrov 25000
+Sidorov 12300
+Maksimov 15000
+Trump 22650
+Ivanova 21000
+Petrova 23000
+Sidorova 16300
+Maksimova 25000
+Elcyn 11200

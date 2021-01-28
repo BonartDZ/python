@@ -1,13 +1,15 @@
+from functools import reduce
 
-my_list = [7, 7, 5, 4, 4, 2]
-new_value = (input('введите число: '))
-i = 0
-for i in range(len(my_list)):
-    if int(new_value) >= int(my_list[i]):
-        my_list.insert((i), new_value)
-        print(my_list)
-        break
-    else:
-        print('значение меньше минимально установленного')
-        break
+with open(r'task5.txt', 'w') as file:
+    file.write('2 33 1 44 55')
+with open(r'task5.txt', 'r') as file:
+    list = file.readline().split()
+    i = 0
+    for i in range(len(list)):
+        list[i] = int(list[i])
+        i += 1
+    def my_func(el_p, el):
+        return el_p + el
 
+
+    print('сумма всех чисел составляет: ', reduce(my_func, list))
